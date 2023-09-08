@@ -1,0 +1,53 @@
+
+.toreto{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+border-radius: 70px solid;
+}
+
+.toreto2{
+    display: flex;
+    border-radius: 30px black;
+    flex-direction: column;
+}
+.cal{
+    display: flex;
+}
+.estebody{
+    background-color: rgb(65, 59, 59);
+    color: white;
+}
+.parejo{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    text-decoration: none;
+    background-color: rgb(88, 73, 73);
+    margin: 5px;
+
+}
+.coin{
+    color: green;
+}
+.ten{
+    display: flex;
+    font-weight:bold;
+    color: blanchedalmond;
+}
+.sinop{
+    display: flex;
+    border-radius: 8px;
+    background-color: rgb(88, 73, 73);
+    width: 550px;
+    padding: 10px;
+    margin: 28px;
+}
+
+.botones{
+    margin: 4px;
+    width: 500px;
+}
