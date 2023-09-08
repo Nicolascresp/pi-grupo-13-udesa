@@ -1,0 +1,159 @@
+/*fondo de la pagina*/
+.fondo{
+    background-color: #141414;
+}
+
+
+/*creando el header*/
+
+.logo {
+    margin-top: 20px;
+    border-radius: 150px;
+    width: 230px;
+}
+
+.ubicacionLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    margin: 0 20px;
+    background-color: #4AE0E4;
+    height: 70px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+/*ASPECTOS GENERALES DE LA PAGINA*/
+
+.imagenes{
+    object-fit: contain;
+    width: 200px;
+    height: 350px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #060303; 
+  }
+
+.barra{
+    display: flex;
+    justify-content: center;
+  }
+
+body{
+    background-image: url();
+}
+
+.footer{
+    background-color: #16A3A6;
+    height: 50px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.grupo1{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.texto{
+    list-style: none;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: px;
+    justify-content: center;
+    font-family: Verdana;
+    color: #e5e5e5;
+}
+
+/*ajustando formatos de subtitulos*/
+.ajustes{
+    background-color: #33CFB5 ;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-family: Verdana;
+    font-weight:500;
+}
+.lista-elementos{
+    padding: 0px;
+}
+.lista-generos{
+    text-decoration: none;
+    list-style: none;
+    font-family: Verdana;
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+/*GENEROS*/
+.separando a {
+    margin: 40px;
+    color: #e5e5e5 ;
+    text-decoration: none;
+    font-size: 22px;
+    
+   
+}
+
+.grupo{
+    margin-top: 30px;
+}
+
+
+/* DETALLE GENEROS*/
+.ajustes1{
+    background-color: #6AC9EA;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-family: Verdana;
+    margin-bottom: 10px;
+}
+
+
+/*separando los elementos de la lista de generos*/
+
+.card{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
