@@ -186,6 +186,7 @@ border-radius: 70px solid;
     text-decoration: none;
     background-color: rgb(88, 73, 73);
     margin: 5px;
+    list-style: none;
 
 }
 .coin{
@@ -211,4 +212,37 @@ border-radius: 70px solid;
 }
 .arrab{
      margin-top:  11px;
+}
+
+.toreto3{
+    width: 300px;
+    height: 400px;
+}
+.toreto4{
+    font-weight: weight;
+    font-family: 'Courier New', Courier, monospace;
+}
+.agregara{
+    display: flex;
+    width: 60px;
+    display: flex;
+    border-right-style: solid 12px black;
+    border-bottom-style: solid 12px black;
+    background-color: #363232;
+    margin-bottom: 18px;
+    height: 24px;
+
+}
+.agregarb{
+    display: flex;
+    width: 120px;
+    display: flex;
+    border-right-style: solid 12px black;
+    border-bottom-style: solid 12px black;
+    background-color: #363232;
+    margin-bottom: 18px;
+
+}
+.apa{
+    text-decoration: none;
 }
