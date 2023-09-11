@@ -1,5 +1,7 @@
 /*fondo de la pagina*/
-.fondo{
+
+html{
+    font-family: Verdana;
     background-color: #141414;
 }
 
@@ -57,10 +59,6 @@
     display: flex;
     justify-content: center;
   }
-
-body{
-    background-image: url();
-}
 
 .footer{
     background-color: #16A3A6;
@@ -175,8 +173,7 @@ border-radius: 70px solid;
     display: flex;
 }
 .estebody{
-    background-color: rgb(65, 59, 59);
-    color: white;
+    color: #e5e5e5;
 }
 .parejo{
     
@@ -187,7 +184,8 @@ border-radius: 70px solid;
     background-color: rgb(88, 73, 73);
     margin: 5px;
     list-style: none;
-
+    border-radius: 5px;
+    padding-right: 40px;
 }
 .coin{
     color: green;
