@@ -1,55 +1,4 @@
-.toreto{
-    display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-
-border-radius: 70px solid;
-}
-
-.toreto2{
-    display: flex;
-    border-radius: 30px black;
-    flex-direction: column;
-}
-.cal{
-    display: flex;
-}
-.estebody{
-    background-color: rgb(65, 59, 59);
-    color: white;
-}
-.parejo{
-    
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    text-decoration: none;
-    background-color: rgb(88, 73, 73);
-    margin: 5px;
-
-}
-.coin{
-    color: green;
-}
-.ten{
-    display: flex;
-    font-weight:bold;
-    color: blanchedalmond;
-}
-.sinop{
-    display: flex;
-    border-radius: 8px;
-    background-color: rgb(88, 73, 73);
-    width: 550px;
-    padding: 10px;
-    margin: 28px;
-}
-
-.botones{
-    margin: 4px;
-    width: 500px;
-}
+/*fondo de la pagina*/
 
 html{
     font-family: Verdana;
@@ -280,6 +229,7 @@ border-radius: 70px solid;
     background-color: #363232;
     margin-bottom: 18px;
     height: 24px;
+    color: #e5e5e5;
 
 }
 .agregarb{
@@ -294,250 +244,20 @@ border-radius: 70px solid;
 }
 .apa{
     text-decoration: none;
-}
-
-html{
-    font-family: Verdana;
-    background-color: #141414;
-}
-
-
-/*creando el header*/
-
-.logo {
-    margin-top: 20px;
-    border-radius: 150px;
-    width: 230px;
-}
-
-.ubicacionLogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    justify-content: center;
-    font-family: Arial, sans-serif;
-}
-
-.menu {
-    margin: 0 20px;
-    background-color: #4AE0E4;
-    height: 70px;
-    width: 180px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-}
-
-/*ASPECTOS GENERALES DE LA PAGINA*/
-
-.imagenes{
-    object-fit: contain;
-    width: 200px;
-    height: 350px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #060303; 
-  }
-
-.barra{
-    display: flex;
-    justify-content: center;
-  }
-
-.footer{
-    background-color: #16A3A6;
-    height: 50px;
-    width: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    margin-top: 50px;
-}
-
-.grupo1{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.texto{
-    list-style: none;
-    display: flex;
-    margin-top: 5px;
-    margin-bottom: px;
-    justify-content: center;
-    font-family: Verdana;
-    color: #e5e5e5;
-}
-
-/*ajustando formatos de subtitulos*/
-.ajustes{
-    background-color: #33CFB5 ;
-    height: 70px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    font-family: Verdana;
-    font-weight:500;
-}
-.lista-elementos{
-    padding: 0px;
-}
-.lista-generos{
-    text-decoration: none;
-    list-style: none;
-    font-family: Verdana;
-    margin: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 90px;
-}
-
-/*GENEROS*/
-.separando a {
-    margin: 40px;
-    color: #e5e5e5 ;
-    text-decoration: none;
-    font-size: 22px;
     
-   
 }
 
-.grupo{
-    margin-top: 30px;
-}
+@media (max-width: 420px) {
+    .estebody{
+        margin-right: 40px;
+        margin-right: 40px;
 
 
-/* DETALLE GENEROS*/
-.ajustes1{
-    background-color: #6AC9EA;
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    font-family: Verdana;
-    margin-bottom: 10px;
-}
+    }
 
-
-/*separando los elementos de la lista de generos*/
-
-.card{
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.toreto{
-    display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-
-border-radius: 70px solid;
-}
-
-.toreto2{
-    display: flex;
-    border-radius: 30px black;
-    flex-direction: column;
-}
-.cal{
-    display: flex;
-}
-.estebody{
-    color: #e5e5e5;
-}
-.parejo{
-    
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    text-decoration: none;
-    background-color: rgb(88, 73, 73);
-    margin: 5px;
-    list-style: none;
-    border-radius: 5px;
-    padding-right: 40px;
-}
-.coin{
-    color: green;
-}
-.ten{
-    display: flex;
-    font-weight:bold;
-    color: blanchedalmond;
-}
-.sinop{
-    display: flex;
-    border-radius: 8px;
-    background-color: rgb(88, 73, 73);
-    width: 550px;
-    padding: 10px;
-    margin: 28px;
-}
-
-.botones{
-    margin: 4px;
-    width: 500px;
-}
-.arrab{
-     margin-top:  11px;
-}
-
-.toreto3{
-    width: 300px;
-    height: 400px;
-}
-.toreto4{
-    font-weight: weight;
-    font-family: 'Courier New', Courier, monospace;
-}
-.agregara{
-    display: flex;
-    width: 60px;
-    display: flex;
-    border-right-style: solid 12px black;
-    border-bottom-style: solid 12px black;
-    background-color: #363232;
-    margin-bottom: 18px;
-    height: 24px;
-
-}
-.agregarb{
-    display: flex;
-    width: 120px;
-    display: flex;
-    border-right-style: solid 12px black;
-    border-bottom-style: solid 12px black;
-    background-color: #363232;
-    margin-bottom: 18px;
-
-}
-.apa{
-    text-decoration: none;
+    .sinop{
+        
+        width: 240px;
+    }
 }
 
