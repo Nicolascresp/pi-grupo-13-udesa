@@ -127,11 +127,6 @@ html{
    
 }
 
-.grupo{
-    margin-top: 30px;
-}
-
-
 /* DETALLE GENEROS*/
 .ajustes1{
     background-color: #6AC9EA;
@@ -243,4 +238,29 @@ border-radius: 70px solid;
 }
 .apa{
     text-decoration: none;
+}
+
+
+
+
+@media (max-width: 420px) {
+.header{
+    display: flex;
+    flex-direction: column;
+
+}
+.logo{
+    width: 100px;
+}
+
+.nav-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.menu{
+    margin-top: 10px;
+}
 }
