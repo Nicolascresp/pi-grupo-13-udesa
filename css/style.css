@@ -229,6 +229,7 @@ border-radius: 70px solid;
     background-color: #363232;
     margin-bottom: 18px;
     height: 24px;
+    color: #e5e5e5;
 
 }
 .agregarb{
@@ -239,8 +240,29 @@ border-radius: 70px solid;
     border-bottom-style: solid 12px black;
     background-color: #363232;
     margin-bottom: 18px;
+    color: #e5e5e5;
 
 }
 .apa{
     text-decoration: none;
+    
 }
+
+@media (max-width: 420px) {
+    .estebody{
+        margin-right: 40px;
+        margin-right: 40px;
+
+
+    }
+
+.sinop{
+    
+    width: 240px;
+}
+
+
+
+
+}
+
