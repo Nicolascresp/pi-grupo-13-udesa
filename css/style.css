@@ -261,6 +261,22 @@ border-radius: 70px solid;
     
 }
 .menu{
-    margin-top: 10px;
+    margin-top: 15px;
+}
+.grupo1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.separando{
+    margin-top: 15px;
+}
+.footer{
+    width: 365px;
+}
+
+.ajustes{
+    width: 365px;
 }
 }
