@@ -338,16 +338,14 @@ border-radius: 70px solid;
     .parejo{
         display: flex;
         flex-wrap: wrap;
-    }
-
-    
-        
-       
-    }
-    
+    }  
     .botones{
         width: 75vw;
     }
-}
+    }
+
+       
+
+
 
 
