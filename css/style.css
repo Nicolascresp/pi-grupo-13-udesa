@@ -20,6 +20,10 @@ html {
     align-items: center;
 }
 
+.navegacion{
+    margin-bottom: 40px;
+}
+
 .nav-ul {
     list-style: none;
     padding: 0;
@@ -63,31 +67,12 @@ html {
 .footer {
     background-color: #16A3A6;
     height: 50px;
-    width: 700px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
     margin-top: 50px;
-}
-
-.grupo1 {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.texto {
-    list-style: none;
-    display: flex;
-    margin-top: 5px;
-    margin-bottom: px;
-    justify-content: center;
-    font-family: Verdana;
-    color: #e5e5e5;
 }
 
 /*ajustando formatos de subtitulos*/
@@ -101,12 +86,49 @@ html {
     border-radius: 30px;
     font-family: Verdana;
     font-weight: 500;
+    margin-top: 50px;
+    color: #060303;
 }
 
-.lista-elementos {
-    padding: 0px;
+/*Contenedor padre de las imagenes*/
+.grupo1 {
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+/*Contenedor padre de las imagenes empezando al reves*/
+.grupo1Reverse {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
+
+.texto {
+    list-style: none;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: px;
+    justify-content: center;
+    font-family: Verdana;
+    color: #e5e5e5;
+}
+
+
+
+/*GENEROS*/
+.separando a {
+    margin: 40px;
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 22px;
+}
 .lista-generos {
     text-decoration: none;
     list-style: none;
@@ -119,17 +141,9 @@ html {
     margin-top: 90px;
 }
 
-/*GENEROS*/
-.separando a {
-    margin: 40px;
-    color: #e5e5e5;
-    text-decoration: none;
-    font-size: 22px;
-
-
-}
 
 /* DETALLE GENEROS*/
+/* Titulos*/
 .ajustes1 {
     background-color: #6AC9EA;
     height: 80px;
@@ -141,16 +155,29 @@ html {
     font-family: Verdana;
     margin-bottom: 10px;
 }
-
-
 /*separando los elementos de la lista de generos*/
-
 .card {
     padding: 15px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+
+
+/*DETALLE PELICULA*/
+.subtitulo {
+    background-color: #33CFB5;
+    height: 70px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-family: Verdana;
+    font-weight: 500;
+    margin-top: 50px;
 }
 
 .toreto {
@@ -258,11 +285,9 @@ html {
 
 }
 
-.oculto {
-    display: none;
-}
 
-/*busqueda*/
+
+/*Busqueda*/
 
 .menuBusqueda {
     background-color: #33CFB5;
@@ -283,6 +308,11 @@ html {
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+}
+
+
+.oculto {
+    display: none;
 }
 
 /*Haciendo la pagian responsive*/
@@ -343,7 +373,7 @@ html {
 
     }
 
-    .hola {
+    .detalles {
         width: 80vw;
         height: 140px;
         margin-top: 5px;
