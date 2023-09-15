@@ -271,7 +271,7 @@ border-radius: 70px solid;
     border-radius: 30px;
 }
 
-
+/*Haciendo la pagian responsive*/
 
 @media (max-width: 420px) {
 .header{
