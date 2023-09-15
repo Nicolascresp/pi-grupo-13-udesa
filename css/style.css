@@ -240,6 +240,7 @@ border-radius: 70px solid;
     border-bottom-style: solid 12px black;
     background-color: #363232;
     margin-bottom: 18px;
+    color: #e5e5e5;
 
 }
 .apa{
@@ -248,16 +249,37 @@ border-radius: 70px solid;
 }
 
 @media (max-width: 420px) {
-    .estebody{
-        margin-right: 40px;
-        margin-right: 40px;
-
-
-    }
-
+    
     .sinop{
         
-        width: 240px;
+        width: 60vw;
+        height: 250px;
     }
+    .arrab{
+        width: 80vw;
+        
+    }
+    .hola{
+        width: 80vw;
+        height: 140px;
+        margin-top: 5px;
+        padding: 3px;
+       
+      
+    }
+.ho{
+        width: 80vw;
+    }
+
+.parejo{
+    display: flex;
+    flex-wrap: wrap;
+    
+   
+}
+
+.botones{
+    width: 75vw;
+}
 }
 
