@@ -243,15 +243,6 @@ border-radius: 70px solid;
     
 }
 
-
-
-
-@media (max-width: 420px) {
-.header{
-    display: flex;
-    flex-direction: column;
-
-}
 .logo{
     width: 100px;
 }
@@ -282,7 +273,7 @@ border-radius: 70px solid;
 .ajustes{
     width: 365px;
 }
-}
+
 @media (max-width: 420px) {
     .estebody{
         margin-right: 40px;
