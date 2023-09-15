@@ -242,7 +242,9 @@ border-radius: 70px solid;
     
 }
 
-
+.oculto{
+    display: none;
+}
 
 
 @media (max-width: 420px) {
