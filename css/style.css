@@ -1,6 +1,6 @@
 /*fondo de la pagina*/
 
-html{
+html {
     font-family: Verdana;
     background-color: #141414;
 }
@@ -44,7 +44,7 @@ html{
 
 /*ASPECTOS GENERALES DE LA PAGINA*/
 
-.imagenes{
+.imagenes {
     object-fit: contain;
     width: 200px;
     height: 350px;
@@ -52,15 +52,15 @@ html{
 
 .menu a {
     text-decoration: none;
-    color: #060303; 
-  }
+    color: #060303;
+}
 
-.barra{
+.barra {
     display: flex;
     justify-content: center;
-  }
+}
 
-.footer{
+.footer {
     background-color: #16A3A6;
     height: 50px;
     width: 700px;
@@ -71,7 +71,7 @@ html{
     margin-top: 50px;
 }
 
-.grupo1{
+.grupo1 {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
@@ -80,7 +80,7 @@ html{
 
 }
 
-.texto{
+.texto {
     list-style: none;
     display: flex;
     margin-top: 5px;
@@ -91,8 +91,8 @@ html{
 }
 
 /*ajustando formatos de subtitulos*/
-.ajustes{
-    background-color: #33CFB5 ;
+.ajustes {
+    background-color: #33CFB5;
     height: 70px;
     width: 100%;
     display: flex;
@@ -100,12 +100,14 @@ html{
     align-items: center;
     border-radius: 30px;
     font-family: Verdana;
-    font-weight:500;
+    font-weight: 500;
 }
-.lista-elementos{
+
+.lista-elementos {
     padding: 0px;
 }
-.lista-generos{
+
+.lista-generos {
     text-decoration: none;
     list-style: none;
     font-family: Verdana;
@@ -120,15 +122,15 @@ html{
 /*GENEROS*/
 .separando a {
     margin: 40px;
-    color: #e5e5e5 ;
+    color: #e5e5e5;
     text-decoration: none;
     font-size: 22px;
-    
-   
+
+
 }
 
 /* DETALLE GENEROS*/
-.ajustes1{
+.ajustes1 {
     background-color: #6AC9EA;
     height: 80px;
     width: 100%;
@@ -143,35 +145,39 @@ html{
 
 /*separando los elementos de la lista de generos*/
 
-.card{
+.card {
     padding: 15px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.toreto{
-    display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
 
-border-radius: 70px solid;
+.toreto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 70px solid;
 }
 
-.toreto2{
+.toreto2 {
     display: flex;
     border-radius: 30px black;
     flex-direction: column;
 }
-.cal{
+
+.cal {
     display: flex;
 }
-.estebody{
+
+.estebody {
     color: #e5e5e5;
 }
-.parejo{
-    
+
+.parejo {
+
     display: flex;
     flex-direction: row;
     gap: 25px;
@@ -182,15 +188,18 @@ border-radius: 70px solid;
     border-radius: 5px;
     padding-right: 40px;
 }
-.coin{
+
+.coin {
     color: green;
 }
-.ten{
+
+.ten {
     display: flex;
-    font-weight:bold;
+    font-weight: bold;
     color: blanchedalmond;
 }
-.sinop{
+
+.sinop {
     display: flex;
     border-radius: 8px;
     background-color: rgb(88, 73, 73);
@@ -199,23 +208,27 @@ border-radius: 70px solid;
     margin: 28px;
 }
 
-.botones{
+.botones {
     margin: 4px;
     width: 500px;
 }
-.arrab{
-     margin-top:  11px;
+
+.arrab {
+    margin-top: 11px;
 }
 
-.toreto3{
+.toreto3 {
+    margin-top: 40px;
     width: 300px;
     height: 400px;
 }
-.toreto4{
+
+.toreto4 {
     font-weight: weight;
     font-family: 'Courier New', Courier, monospace;
 }
-.agregara{
+
+.agregara {
     display: flex;
     width: 60px;
     display: flex;
@@ -227,7 +240,8 @@ border-radius: 70px solid;
     color: #e5e5e5;
 
 }
-.agregarb{
+
+.agregarb {
     display: flex;
     width: 120px;
     display: flex;
@@ -238,29 +252,31 @@ border-radius: 70px solid;
     color: #e5e5e5;
 
 }
-.apa{
+
+.apa {
     text-decoration: none;
-    
+
 }
 
-.oculto{
+.oculto {
     display: none;
 }
 
 /*busqueda*/
 
-.menuBusqueda{
-    background-color:  #33CFB5;
+.menuBusqueda {
+    background-color: #33CFB5;
     height: 70px;
     width: 570px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+    margin-top: 40px;
 }
 
-.busquedaReco{
-    background-color:  #87cfc3;
+.busquedaReco {
+    background-color: #87cfc3;
     height: 40px;
     width: 390px;
     display: flex;
@@ -269,82 +285,92 @@ border-radius: 70px solid;
     border-radius: 30px;
 }
 
+/*Haciendo la pagian responsive*/
 
 
 /*media querys de telefono*/
 @media (max-width: 420px) {
-.header{
-    display: flex;
-    flex-direction: column;
+    .header {
+        display: flex;
+        flex-direction: column;
 
-}
-.logo{
-    width: 100px;
-}
+    }
 
-.nav-ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-.menu{
-    margin-top: 15px;
-}
-.grupo1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.separando{
-    margin-top: 15px;
-}
-.footer{
-    width: 365px;
-}
+    .logo {
+        width: 100px;
+    }
 
-.ajustes{
-    width: 365px;
+    .nav-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-}
-}
+    }
+
+    .menu {
+        margin-top: 15px;
+    }
+
+    .grupo1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .separando {
+        margin-top: 15px;
+    }
+
+    .footer {
+        width: 365px;
+    }
+
+    .ajustes {
+        width: 365px;
+
+    }
+
+    .sinop {
+
+        width: 60vw;
+        height: 250px;
+    }
+
+    .arrab {
+        width: 80vw;
+
+    }
+
+    .hola {
+        width: 80vw;
+        height: 140px;
+        margin-top: 5px;
+        padding: 3px;
 
 
-    @media (max-width: 420px) {
-    
-        .sinop{
-            
-            width: 60vw;
-            height: 250px;
-        }
-        .arrab{
-            width: 80vw;
-            
-        }
-        .hola{
-            width: 80vw;
-            height: 140px;
-            margin-top: 5px;
-            padding: 3px;
-           
-          
-        }
-    .ho{
-            width: 80vw;
-        }
-    
-    .parejo{
+    }
+
+    .ho {
+        width: 80vw;
+    }
+
+    .parejo {
         display: flex;
         flex-wrap: wrap;
-    }  
-    .botones{
+    }
+
+    .botones {
         width: 75vw;
     }
     }
 
        
+
+
+
+
 
 
 
