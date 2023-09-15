@@ -271,6 +271,7 @@ border-radius: 70px solid;
 
 
 
+/*media querys de telefono*/
 @media (max-width: 420px) {
 .header{
     display: flex;
