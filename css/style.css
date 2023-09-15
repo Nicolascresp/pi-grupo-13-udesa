@@ -246,6 +246,29 @@ border-radius: 70px solid;
     display: none;
 }
 
+/*busqueda*/
+
+.menuBusqueda{
+    background-color:  #33CFB5;
+    height: 70px;
+    width: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.busquedaReco{
+    background-color:  #87cfc3;
+    height: 40px;
+    width: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+
 
 @media (max-width: 420px) {
 .header{
