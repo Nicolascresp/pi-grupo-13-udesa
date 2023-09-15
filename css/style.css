@@ -281,18 +281,17 @@ border-radius: 70px solid;
 .ajustes{
     width: 365px;
 }
+
+.estebody{
+    margin-right: 40px;
+    margin-right: 40px;
+
+
 }
-@media (max-width: 420px) {
-    .estebody{
-        margin-right: 40px;
-        margin-right: 40px;
 
-
-    }
-
-    .sinop{
-        
-        width: 240px;
-    }
+.sinop{
+    
+    width: 240px;
+}
 }
 
