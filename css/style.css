@@ -167,18 +167,7 @@ html {
 
 
 /*DETALLE PELICULA*/
-.subtitulo {
-    background-color: #33CFB5;
-    height: 70px;
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    font-family: Verdana;
-    font-weight: 500;
-    margin-top: 50px;
-}
+
 
 .toreto {
     display: flex;
@@ -195,9 +184,7 @@ html {
     flex-direction: column;
 }
 
-.cal {
-    display: flex;
-}
+
 
 .estebody {
     color: #e5e5e5;
