@@ -13,7 +13,7 @@ fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${acaVaLaAPIKey}`)
 
     for (let i = 0; i <= 5 ; i++) {
         peliculas +=` <article class="articulopelicula">
-        <a href="./detalleP.html">
+        <a href="./detallePeliculas.html">
         <img src="https://image.tmdb.org/t/p/w500/${arrayPeliculas[i].poster_path}"
         class="img-p">
         </a>
