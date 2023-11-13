@@ -1,4 +1,4 @@
-let peliculas_menor = document.querySelector(".cajahija")
+const peliculas_menor = document.querySelector(".grupo1")
 
 let acaVaLaAPIKey = "0e2ea5762304016279ec676c08bd2b6d";
 
@@ -12,7 +12,7 @@ fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${acaVaLaAPIKey}`)
     let peliculas = ""
 
     for (let i = 0; i <= 5 ; i++) {
-        peliculas +=` <article class="articulo_pelicula">
+        peliculas +=` <article class="articulopelicula">
         <a href="./detalleP.html">
         <img src="https://image.tmdb.org/t/p/w500/${arrayPeliculas[i].poster_path}"
         class="img-p">
@@ -20,7 +20,9 @@ fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${acaVaLaAPIKey}`)
         <h3 class="elem1">${arrayPeliculas[i].title}</h3>
 
         <p class="info">Fecha de estreno: ${arrayPeliculas[i].release_date}</p>
+
         </article> `;
+        
         
     }
     peliculas_menor.innerHtml += peliculas
