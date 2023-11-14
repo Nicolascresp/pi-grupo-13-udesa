@@ -99,6 +99,22 @@ html {
     justify-content: center;
 
 }
+.grupo2 {
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.grupo3 {
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
 /*Contenedor padre de las imagenes empezando al reves*/
 .grupo1Reverse {
     margin-top: 30px;
