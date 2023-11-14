@@ -13,7 +13,7 @@ let acaVaLaAPIKey = "0e2ea5762304016279ec676c08bd2b6d"
     let codigo2 = ""
     let arrayGeneros = data.genre
 
-    ${arrayGeneros[i+1].poster_path
+  
     for (let i = 0; i < 1 ; i++) {
         codigo1 +=` <section class="articuloGeneros">
 
