@@ -9,8 +9,6 @@ const buscador = `https://api.themoviedb.org/3/search/movie?api_key=${apyKey}&qu
 
 let peliculas = document.querySelector(".hijo1") 
 
-let peliculas_menor = document.querySelector(".cajahija")
-
 
 
 fetch(peliculasPopulares)
