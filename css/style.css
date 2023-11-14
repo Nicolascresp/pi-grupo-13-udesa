@@ -361,6 +361,9 @@ html {
         flex-wrap: wrap;
     }
 
+    .botones {
+        width: 75vw;
+    }
 }
 
 
