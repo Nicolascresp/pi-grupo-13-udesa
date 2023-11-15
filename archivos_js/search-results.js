@@ -22,8 +22,8 @@ fetch(url)
             menuBusqueda.innerText = `No se encontraron resultados para: ${busqueda}`
 
         }
-else  { let menuBusqueda = document.querySelector("#menuBusqueda")
-menuBusqueda.innerText = `Resultado de busqueda: ${busqueda}`}
+        else  { let menuBusqueda = document.querySelector("#menuBusqueda")
+        menuBusqueda.innerText = `Resultado de busqueda: ${busqueda}`}
         
     let contenido = "";
 
