@@ -50,6 +50,7 @@ html {
     object-fit: contain;
     width: 200px;
     height: 350px;
+    max-height: 300px;
 }
 
 .menu a {
@@ -95,6 +96,7 @@ html {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    height: auto;
 
 }
 .hijo2 {
@@ -113,25 +115,31 @@ html {
     justify-content: center;
 
 }
-/*Contenedor padre de las imagenes empezando al reves*/
-.grupo1Reverse {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    justify-content: center;
 
-}
+
 
 
 .texto {
     list-style: none;
     display: flex;
-    margin-top: 5px;
-    margin-bottom: px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     justify-content: center;
     font-family: Verdana;
     color: #e5e5e5;
+    overflow: auto;
+    max-height: 50px;
+} 
+
+.titulo {
+    list-style: none;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    justify-content: center;
+    font-family: Verdana;
+    color: #e5e5e5;
+    text-align: center;
 }
 
 
@@ -176,8 +184,9 @@ html {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 200px;
+    
 }
-
 
 
 /*DETALLE PELICULA*/
@@ -314,15 +323,6 @@ html {
     margin-top: 40px;
 }
 
-.busquedaReco {
-    background-color: #87cfc3;
-    height: 40px;
-    width: 390px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-}
 
 
 .oculto {
@@ -358,6 +358,14 @@ html {
     }
 
     .grupo1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #areaResultados{
         display: flex;
         flex-direction: column;
         justify-content: center;
