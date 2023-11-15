@@ -6,12 +6,12 @@ const endpointDos = `https://api.themoviedb.org/3/genre/tv/list?api_key=${acaVaL
 
 
 
-.fetch(endpointUno)
+fetch(endpointUno)
 .then(function(response){
     return response.json()
 })
 .then(function(data){
-    console.log(data.genres)
+    console.log(data)
     let codigo1 = ""
    
     let arrayGeneros = data.genres;
@@ -21,9 +21,9 @@ const endpointDos = `https://api.themoviedb.org/3/genre/tv/list?api_key=${acaVaL
     for (let i = 0; i < arrayGeneros.lenght ; i++) {
         codigo1 +=
         `<li class="separando">
-        <a href="">
+        <a href="detallegenero.html?id=${arrayGeneros[i].id}&name=${arrayGeneros[i].name}">
         ${arrayGenerosDos[i].name}
-        </a>
+       </a>
         </li>`;
         
     }
@@ -35,15 +35,15 @@ const endpointDos = `https://api.themoviedb.org/3/genre/tv/list?api_key=${acaVaL
     console.log(e)
 })
 
-.fetch(endpointDos)
+fetch(endpointDos)
 .then(function(response){
     return response.json()
 })
 .then(function(data){
-    console.log(data.genres)
+    console.log(data)
     
     let codigo2 = ""
-    let arrayGenerosDos = data.genre
+    let arrayGenerosDos = data.genres
     console.log(arrayGenerosDos)
 
    
@@ -52,7 +52,7 @@ const endpointDos = `https://api.themoviedb.org/3/genre/tv/list?api_key=${acaVaL
 
         codigo2 +=
         `<li class="separando">
-        <a href="">
+        <a href="detalleGenero.html?id=${arrayGenerosDos[i].id}&name=${arrayGeneros[i].name}">
         ${arrayGenerosDos[i].name}
         </a>
         </li>`;
