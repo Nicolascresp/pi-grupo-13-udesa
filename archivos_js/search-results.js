@@ -8,7 +8,7 @@ const areaDeResultados = document.querySelector("#areaResultados")
 
 
 
-/*agregar get element by id para hacerlo funcionar en bucle*/
+
 fetch(url)
     .then(function (response) {
         return response.json();
