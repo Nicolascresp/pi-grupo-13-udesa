@@ -7,62 +7,59 @@ const endpointDos = `https://api.themoviedb.org/3/genre/tv/list?api_key=${acaVaL
 
 
 fetch(endpointUno)
-.then(function(response){
-    return response.json()
-})
-.then(function(data){
-    console.log(data)
-    let codigo1 = ""
-   
-    let arrayGeneros = data.genres;
-    console.log(arrayGeneros)
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        let codigo1 = ""
 
-   
-    for (let i = 0; i < arrayGeneros.lenght ; i++) {
-        codigo1 +=
-        `<li class="separando">
-        <a href="detallegenero.html?id=${arrayGeneros[i].id}&name=${arrayGeneros[i].name}">
-        ${arrayGenerosDos[i].name}
-       </a>
-        </li>`;
-        
-    }
-    generop.innerHTML = codigo1;
-    
-    return data
-})
-.catch(function(e){
-    console.log(e)
-})
+        let arrayGeneros = data.genres;
+        console.log(arrayGeneros)
+
+
+        for (let i = 0; i < arrayGeneros.length; i++) {
+            codigo1 +=
+                `<li class="separando">
+                    <a href="detallegenero.html?id=${arrayGeneros[i].id}&name=${arrayGeneros[i].name}">
+                         ${arrayGeneros[i].name}
+                    </a>
+                </li>`;
+
+        }
+        generop.innerHTML = codigo1;
+
+        return data
+    })
+    .catch(function (e) {
+        console.log(e)
+    })
 
 fetch(endpointDos)
-.then(function(response){
-    return response.json()
-})
-.then(function(data){
-    console.log(data)
-    
-    let codigo2 = ""
-    let arrayGenerosDos = data.genres
-    console.log(arrayGenerosDos)
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
 
-   
-    for (let i = 0; i < arrayGenerosDos ; i++) {
+        let codigo2 = ""
+        let arrayGenerosDos = data.genres
+        console.log(arrayGenerosDos)
 
 
-        codigo2 +=
-        `<li class="separando">
-        <a href="detalleGenero.html?id=${arrayGenerosDos[i].id}&name=${arrayGeneros[i].name}">
-        ${arrayGenerosDos[i].name}
-        </a>
-        </li>`;
-        
-        
-    }
-    
-    generos.innerHtml += codigo2;
-    return data
-})
-.catch(function(e){
-    console.log(e)
-})
+        for (let i = 0; i < arrayGenerosDos.length; i++) {
+
+
+            codigo2 +=
+                `<li class="separando">
+                <a href="detalleGenero.html?id=${arrayGenerosDos[i].id}&name=${arrayGenerosDos[i].name}">
+                    ${arrayGenerosDos[i].name}
+                </a>
+                </li>`;
+
+
+        }
+        generos.innerHTML = codigo2;
+        return data
+    })
+    .catch(function (e) {
+        console.log(e)
+    })
