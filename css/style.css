@@ -64,14 +64,30 @@ html {
 }
 
 .footer {
-    background-color: #16A3A6;
-    height: 50px;
+    
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
     margin-top: 50px;
+    background-color: #16A3A6;
+}
+.cajaPadreFooter{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+
+
+}
+.logoApi{
+    max-width: 20%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 /*ajustando formatos de subtitulos*/
