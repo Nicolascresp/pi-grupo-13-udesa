@@ -87,7 +87,6 @@ html {
     font-weight: 500;
     margin-top: 50px;
     color: #060303;
-    
 }
 
 /*Contenedor padre de las imagenes*/
@@ -151,6 +150,14 @@ html {
     color: #e5e5e5;
     text-decoration: none;
     font-size: 22px;
+    margin: 65px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+.genero1{
+    display: flex;
+    flex-direction: column;
+    
 }
 .lista-generos {
     text-decoration: none;
@@ -160,10 +167,9 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     margin-top: 90px;
+    gap: 45px;
 }
-
 
 
 /* DETALLE GENEROS*/
@@ -426,9 +432,4 @@ html {
     .botones {
         width: 75vw;
     }
-    }
-    
-    .verRecomendaciones {
-
-        width: 80vw;
     }
