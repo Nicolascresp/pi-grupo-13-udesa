@@ -35,10 +35,10 @@ fetch(urlpeliculaspopulares)
               <img src="https://image.tmdb.org/t/p/w500${arrayPeliculas[i].poster_path}"
                   class="imagenes">
           </a>
-          <p class="id">${arrayPeliculas[i].id}</p>
+          <p class="id" id="oculto">${arrayPeliculas[i].id}</p>
           <p class="titulo">${arrayPeliculas[i].title}</p>
           <p class="texto">${arrayPeliculas[i].release_date}</p>
-          <p class="texto">pelicula</p>
+          <p class="texto" id="oculto">pelicula</p>
       </article>`;
     }
 
@@ -75,10 +75,10 @@ fetch(urlpeliculaspopulares)
               <img src="https://image.tmdb.org/t/p/w500${arraySeries[i].poster_path}"
                   class="imagenes">
           </a>
-          <p class="id">${arraySeries[i].id}</p>
+          <p class="id" id="oculto">${arraySeries[i].id}</p>
           <p class="titulo">${arraySeries[i].original_name}</p>
           <p class="texto">${arraySeries[i].first_air_date}</p>
-          <p class="texto">serie</p>
+          <p class="texto" id="oculto">serie</p>
       </article>`;
     }
 

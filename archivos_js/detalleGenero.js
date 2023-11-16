@@ -23,11 +23,11 @@ fetch()
 
     let detalle = document.querySelector('#tipoGenero1');
     detalle.innerHTML=`<h2 class="ajustes">${nombre}</h2>`
-    let detalleGen = "";
+    let dGenero = "";
 
     console.log(data);
     for (let i = 0; i < arrayDetalleGenero[0].length; i++) {
-        detalleGen += `<a  href="./detallePeliculas.html?id=${arrayDetalleGenero[i].id}">
+        dGenero += `<a  href="./detallePeliculas.html?id=${arrayDetalleGenero[i].id}">
                         <article class="card">
                         <img class="imagenes" src='https://image.tmdb.org/t/p/w500/${arrayDetalleGenero[i].poster_path}' alt="">
                         <p class="texto">${arrayDetalleGenero[i].title}</p>
@@ -36,7 +36,7 @@ fetch()
     }
 
 
-detalle.innerHTML += detalleGen;
+detalle.innerHTML += dGenero;
 })
 .catch(function(e){
     console.log(e)
