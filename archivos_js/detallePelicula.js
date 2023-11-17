@@ -5,7 +5,7 @@ const id = urlParams.get('id');
 
 let detallesContainer = document.querySelector('.toreto');
 
-fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=3e70f944e54851d50cccbf55e9b26736`)
+fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=2824d7c18fccbca72f06f7f29e7ebcd8`)
     .then(function (response) {
         return response.json();
     })
@@ -64,7 +64,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=3e70f944e54851d50cccbf55
   
 
 
-    <a class="apa" href="./favoritos.html" target=""> <button class="agregarb" type="checkbox">Agregar a
+    <a class="apa" href="./favoritos.html?id=${data.id}" target=""> <button class="agregarb" type="checkbox">Agregar a
             favoritos</button></a>`;
 
         detallesContainer.appendChild(article);
@@ -72,5 +72,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=3e70f944e54851d50cccbf55
     .catch(function (error) {
         console.log( error + 'Error! Intente más tarde');
     });
+
+
 
 

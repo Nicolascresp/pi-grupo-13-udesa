@@ -1,14 +1,12 @@
 let urlpeliculaspopulares = `https://api.themoviedb.org/3/movie/popular?api_key=3e70f944e54851d50cccbf55e9b26736`;
 
-
-
 function clickEnCard (event) {
  
   const id = event.currentTarget.children[1].innerText;
   const tipo = event.currentTarget.children[4].innerText;
   let nuevaURL = "#";
   if(tipo === "pelicula"){
-    
+    // Construir la URL con parámetros
     nuevaURL = `detallePeliculas.html?id=${id}`;
   }
   else{
@@ -28,7 +26,7 @@ fetch(urlpeliculaspopulares)
     console.log(arrayPeliculas);
 
     let contenido = "";
-   
+    //href="./detallePeliculas.html"
     for (let i = 0; i < 5; i++) {
       contenido += `
       <article class="card"?id=${arrayPeliculas[i].title}>

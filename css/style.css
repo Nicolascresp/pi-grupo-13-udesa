@@ -105,6 +105,14 @@ html {
     justify-content: center;
 }
 
+.tituloRecomendaciones{
+
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    font-family: Verdana ;
+}
+
 /*ajustando formatos de subtitulos*/
 .ajustes {
     background-color: #33CFB5;
@@ -175,13 +183,7 @@ html {
     text-align: center;
 }
 
-.tituloRecomendaciones{
 
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-    font-family: Verdana ;
-}
 
 /*GENEROS*/
 .separando a {
@@ -481,11 +483,6 @@ html {
     object-fit: cover;
     border-radius: 10px; 
 }
-
-
-
-
-
 
     
 

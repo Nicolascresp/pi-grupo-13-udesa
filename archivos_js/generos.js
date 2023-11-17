@@ -1,12 +1,8 @@
 const generop = document.querySelector("#lista-generos1")
 const generos = document.querySelector("#lista-generos2")
-const apiKey = "3e70f944e54851d50cccbf55e9b26736"
-const endpointUno = `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}`
-const endpointDos = `https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}`
-
-
-
-
+const acaVaLaAPIKey = "3e70f944e54851d50cccbf55e9b26736"
+const endpointUno = `https://api.themoviedb.org/3/genre/movie/list?api_key=${acaVaLaAPIKey}`
+const endpointDos = `https://api.themoviedb.org/3/genre/tv/list?api_key=${acaVaLaAPIKey}`
 
 
 
