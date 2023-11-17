@@ -449,8 +449,10 @@ html {
     
 }
 
+
 .pelisreco {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
@@ -458,6 +460,19 @@ html {
     font-weight: 500;
     margin-top: 50px;
     color: #060303;
+    width: 80%; /* Porcentaje del ancho de la ventana o puedes usar vw */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.hijo2 {
+    margin: 10px; /* Añade un margen entre las imágenes si lo deseas */
+}
+
+.hijo2 img {
+    width: 100%; /* Establece un ancho del 100% para que las imágenes se ajusten al contenedor */
+    height: auto; /* Mantiene la relación de aspecto original */
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
+    border-radius: 10px; /* Agrega bordes redondeados si lo deseas */
 }
 
 .hijo1,
