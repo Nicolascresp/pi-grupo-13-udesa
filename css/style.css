@@ -43,6 +43,17 @@ html {
     align-items: center;
     border-radius: 30px;
 }
+.genero {
+    margin-top: 100px;
+    margin: 0 20px;
+    background-color: #4AE0E4;
+    height: 70px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
 
 /*ASPECTOS GENERALES DE LA PAGINA*/
 

@@ -23,7 +23,7 @@ fetch(endpointPelicula)
         let detalleGen = "";
 
         console.log(data);
-        for (let i = 0; i < arrayDetalleGenero.length; i++) {
+        for (let i = 0; i < 11; i++) {
             if (arrayDetalleGenero[i].poster_path != "") {
                 detalleGen += `<article class="card"?id=${arrayDetalleGenero[i].title}>
                 <a>
@@ -59,7 +59,7 @@ fetch(endpointSerie)
         let detalleGen = "";
 
         console.log(data);
-        for (let i = 0; i < arrayDetalleGenero.length; i++) {
+        for (let i = 0; i < 11; i++) {
             if (arrayDetalleGenero[i].poster_path != null) {
                 detalleGen += `<a class="card" href="./detallepelicula.html?id=${arrayDetalleGenero[i].id}">
                                     <article class="card">
