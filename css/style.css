@@ -483,7 +483,12 @@ html {
     object-fit: cover;
     border-radius: 10px; 
 }
-
+#contenedor-favoritos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
     
 
 
