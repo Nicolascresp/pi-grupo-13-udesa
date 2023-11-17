@@ -6,32 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recomendaciones</title>
     <link rel="stylesheet" href="../pi-grupo-13-udesa/css/style.css">
-    
+
 </head>
 
 <body>
-    <h2>Películas Recomendadas</h2>
+    <h2 class="ajustes"> Películas Recomendadas</h2>
 
-    <section class="pelisreco">
-        
+    <section class="pelisreco" id = "recomendadas">
+
     </section>
 
     <script>
-        
+
         fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=2824d7c18fccbca72f06f7f29e7ebcd8')
             .then(function (response) {
                 return response.json();
             })
             .then(function (data) {
-                let pelisreco = document.querySelector('.pelisreco');
+                let arrayRecomendadas = document.querySelector('#recomendadas');
                 for (let i = 0; i < 5; i++, i < 5) {
-                    pelisreco.innerHTML += `
-                    <a href="./detalle-pelis.html?id=${data.results[i].id}">
-                        <article>
-                            <img src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" />
-                            <h2>${data.results[i].title}</h2>
-                        </article>
-                    </a>`;
+                    arrayRecomendadas.innerHTML += `
+                    <article class="card"?id=${arrayRecomendadas[i].title}>
+          <a>
+              <img src="https://image.tmdb.org/t/p/w500${arrayRecomendadas[i].poster_path}"
+                  class="imagenes">
+          </a>
+          <p class="id" id="oculto">${arrayRecomendadas[i].id}</p>
+          <p class="titulo">${arrayRecomendadas[i].title}</p>
+          <p class="texto" id="oculto">pelicula</p>
+      </article>`;
                 }
             })
             .catch(function (error) {
