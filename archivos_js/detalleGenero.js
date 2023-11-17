@@ -26,7 +26,7 @@ fetch(endpointPelicula)
         for (let i = 0; i < 11; i++) {
             if (arrayDetalleGenero[i].poster_path != "") {
                 detalleGen += `<article class="card"?id=${arrayDetalleGenero[i].title}>
-                <a>
+                <a href="./detallePeliculas.html?id=${arrayDetalleGenero[i].id}">
                     <img src="https://image.tmdb.org/t/p/w500${arrayDetalleGenero[i].poster_path}"
                         class="imagenes">
                 </a>
