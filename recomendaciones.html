@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones</title>
+    <link rel="stylesheet" href="../pi-grupo-13-udesa/css/style.css">
+    <link rel="stylesheet" href="archivos_js/detallePelicula.js">
+    
+</head>
+
+<body class="estebody">
+    <header>
+        <section class="header">
+            <article class="ubicacionLogo">
+                <img class="logo" src="./img/logo.jpeg" alt="logo">
+            </article>
+    
+    <nav class="navegacion">
+        <ul class="nav-ul">
+            <li class="menu"> <a href="./home.html">HOME</a></li>
+            <li class="menu"> <a href="./favoritos.html">FAVORITOS</a></li>
+            <li class="menu"> <a href="./genero.html">GENEROS</a></li>
+        </ul>
+    </nav>
+    <h2 class="ajustes">Películas Recomendadas</h2>
+    <section class="pelisreco">
+   
+    </section>
+
+    <script>
+        
+        fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=2824d7c18fccbca72f06f7f29e7ebcd8')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                let pelisreco = document.querySelector('.pelisreco');
+                for (let i = 0; i < 5; i++, i < 5) {
+                    pelisreco.innerHTML += `
+                   <a class="hijo2" href="./detallePeliculas.html?id=${data.results[i].id}">
+
+                        <article >
+                            <img class= "imagen" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" />
+                    
+                            <h2 class= "titulopelisreco">${data.results[i].title}</h2>
+                        </article>
+                    </a>`;
+                }
+            })
+            .catch(function (error) {
+                console.log('error');
+            });
+    </script>
+</body>
+
+<footer>
+
+    <section>
+        <article class="nav-ul cajaPadreFooter">
+            <p class="footer">Vicente Bosch - Nicolas Crespo - Marcos Ayerza</p>
+            <img class="logoApi" src="./img/blue_long_1-8ba2ac31f354005783fab473602c34c3f4fd207150182061e425d366e4f34596.svg" alt="">
+        </article>
+        
+    </section>
+</footer>
+
+</html>

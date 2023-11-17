@@ -1,5 +1,3 @@
-/*fondo de la pagina*/
-
 html {
     font-family: Verdana;
     background-color: #141414;
@@ -52,6 +50,7 @@ html {
     object-fit: contain;
     width: 200px;
     height: 350px;
+    max-height: 300px;
 }
 
 .menu a {
@@ -65,14 +64,30 @@ html {
 }
 
 .footer {
-    background-color: #16A3A6;
-    height: 50px;
+    
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
     margin-top: 50px;
+    background-color: #16A3A6;
+}
+.cajaPadreFooter{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+
+
+}
+.logoApi{
+    max-width: 20%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 /*ajustando formatos de subtitulos*/
@@ -91,7 +106,16 @@ html {
 }
 
 /*Contenedor padre de las imagenes*/
-.grupo1 {
+.hijo1 {
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+
+}
+.hijo2 {
    
     display: flex;
     flex-direction: row;
@@ -99,25 +123,39 @@ html {
     justify-content: center;
 
 }
-/*Contenedor padre de las imagenes empezando al reves*/
-.grupo1Reverse {
-    margin-top: 30px;
+.hijo3 {
+   
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 
 }
 
 
+
+
 .texto {
     list-style: none;
     display: flex;
-    margin-top: 5px;
-    margin-bottom: px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     justify-content: center;
     font-family: Verdana;
     color: #e5e5e5;
+    overflow: auto;
+    max-height: 50px;
+} 
+
+.titulo {
+    list-style: none;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    justify-content: center;
+    font-family: Verdana;
+    color: #e5e5e5;
+    text-align: center;
 }
 
 
@@ -128,6 +166,14 @@ html {
     color: #e5e5e5;
     text-decoration: none;
     font-size: 22px;
+    margin: 65px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+.genero1{
+    display: flex;
+    flex-direction: column;
+    
 }
 .lista-generos {
     text-decoration: none;
@@ -137,8 +183,8 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     margin-top: 90px;
+    gap: 45px;
 }
 
 
@@ -162,12 +208,24 @@ html {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 200px;
+    
 }
 
 
-
 /*DETALLE PELICULA*/
-
+.subtitulo {
+    background-color: #33CFB5;
+    height: 70px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-family: Verdana;
+    font-weight: 500;
+    margin-top: 50px;
+}
 
 .toreto {
     display: flex;
@@ -182,9 +240,12 @@ html {
     display: flex;
     border-radius: 30px black;
     flex-direction: column;
+    align-items: center;
 }
 
-
+.cal {
+    display: flex;
+}
 
 .estebody {
     color: #e5e5e5;
@@ -228,7 +289,10 @@ html {
 }
 
 .arrab {
+    display: flex;
+    flex-direction: column;
     margin-top: 11px;
+    align-items: center;
 }
 
 .toreto3 {
@@ -269,7 +333,9 @@ html {
 
 .apa {
     text-decoration: none;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -287,25 +353,58 @@ html {
     margin-top: 40px;
 }
 
-.busquedaReco {
-    background-color: #87cfc3;
-    height: 40px;
-    width: 390px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-}
 
 
 .oculto {
     display: none;
 }
 
+.fondo {
+    background-color: #141414;
+    
+}
+
+.pelisreco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-family: Verdana;
+    font-weight: 500;
+    margin-top: 50px;
+    color: #060303;
+}
+
+.hijo1,
+.hijo2,
+.hijo3 {
+    padding: 10px; 
+    
+        border: 2px solid #c9c2c2;
+        border-radius: 5px; 
+    }
+
+.titulopelisreco{
+
+text-align: center;
+color: #ffffff;
+
+
+
+}
+
+
+    
+
+
+
+
+
 /*Haciendo la pagian responsive*/
 
 
 /*media querys de telefono*/
+
 @media (max-width: 420px) {
     .header {
         display: flex;
@@ -334,8 +433,23 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
 
+    #areaResultados{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedorPadre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .separando {
         margin-top: 15px;
     }
@@ -350,11 +464,11 @@ html {
     }
 
     .sinop {
-
+        
         width: 60vw;
         height: 250px;
     }
-
+    
     .arrab {
         width: 80vw;
 

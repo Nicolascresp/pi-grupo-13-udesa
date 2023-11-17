@@ -1,70 +1,65 @@
-let generop = document.querySelector(".genero1")
-let generos = document.querySelector(".genero2")
+const generop = document.querySelector("#lista-generos1")
+const generos = document.querySelector("#lista-generos2")
+const acaVaLaAPIKey = "3e70f944e54851d50cccbf55e9b26736"
+const endpointUno = `https://api.themoviedb.org/3/genre/movie/list?api_key=${acaVaLaAPIKey}`
+const endpointDos = `https://api.themoviedb.org/3/genre/tv/list?api_key=${acaVaLaAPIKey}`
 
-let acaVaLaAPIKey = "0e2ea5762304016279ec676c08bd2b6d"
 
-.fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${acaVaLaAPIKey}`)
-.then(function(response){
-    return response.json()
-})
-.then(function(data){
-    console.log(data)
-    let codigo1 = ""
-    let codigo2 = ""
-    let arrayGeneros = data.genre
 
-  
-    for (let i = 0; i < 1 ; i++) {
-        codigo1 +=` <section class="articuloGeneros">
+fetch(endpointUno)
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        let codigo1 = ""
 
-        <h3 class="enunciadoPeliculas">Generos de peliculas </h3>
+        let arrayGeneros = data.genres;
+        console.log(arrayGeneros)
 
-        <a href="./detallePeliculas.html">
-        <p class="genero"> ${arrayGeneros[i].peliculas} </p>
-        </a>
-        <a href="./detallePeliculas.html">
-        <p class="genero"> ${arrayGeneros[i+1].peliculas} </p>
-        </a>
-        <a href="./detallePeliculas.html">
-        <p class="genero"> ${arrayGeneros[i+2].peliculas} </p>
-        </a>
-        <a href="./detallePeliculas.html">
-        <p class="genero"> ${arrayGeneros[i+3].peliculas} </p>
-        </a>
-        <a href="./detallePeliculas.html">
-        <p class="genero"> ${arrayGeneros[i+4].peliculas} </p>
-        </a>
 
-        </section> `;
+        for (let i = 0; i < arrayGeneros.length; i++) {
+            codigo1 +=
+                `<li class="separando">
+                    <a href="detallegenero.html?id=${arrayGeneros[i].id}&name=${arrayGeneros[i].name}">
+                         ${arrayGeneros[i].name}
+                    </a>
+                </li>`;
 
-        codigo2 += ` <section class="articuloGeneros">
+        }
+        generop.innerHTML = codigo1;
 
-        <h3 class="enunciadoSeries">Generos de series </h3>
+        return data
+    })
+    .catch(function (e) {
+        console.log(e)
+    })
 
-        <a href="./detalleSeries.html">
-        <p class="genero"> ${arrayGeneros[i].series} </p>
-        </a>
-        <a href="./detalleSeries.html">
-        <p class="genero"> ${arrayGeneros[i+1].series} </p>
-        </a>
-        <a href="./detalleSeries.html">
-        <p class="genero"> ${arrayGeneros[i+2].series} </p>
-        </a>
-        <a href="./detalleSeries.html">
-        <p class="genero"> ${arrayGeneros[i+3].series} </p>
-        </a>
-        <a href="./detalleSeries.html">
-        <p class="genero"> ${arrayGeneros[i+4].series} </p>
-        </a>
+fetch(endpointDos)
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
 
-        </section> `;
-        
-        
-    }
-    generop.innerHTML += codigo1;
-    generos.innerHtml += codigo2;
-    return data
-})
-.catch(function(e){
-    console.log(e)
-})
+        let codigo2 = ""
+        let arrayGenerosDos = data.genres
+        console.log(arrayGenerosDos)
+
+
+        for (let i = 0; i < arrayGenerosDos.length; i++) {
+
+
+            codigo2 +=
+                `<li class="separando">
+                <a href="detalleGenero.html?id=${arrayGenerosDos[i].id}&name=${arrayGenerosDos[i].name}">
+                    ${arrayGenerosDos[i].name}
+                </a>
+                </li>`;
+
+
+        }
+        generos.innerHTML = codigo2;
+        return data
+    })
+    .catch(function (e) {
+        console.log(e)
+    })
