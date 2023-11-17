@@ -79,3 +79,4 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=2824d7c18fccbca72f06f7f2
 
 
 
+

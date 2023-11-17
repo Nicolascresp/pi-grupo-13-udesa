@@ -32,7 +32,7 @@ fetch(url)
         for (let i = 0; i < buscadorPelicula.length; i++) {
             contenido += `
       <article class="card">
-    <a href="./detalleSeries.html">
+    <a href="./detallePeliculas.html?id=${buscadorPelicula[i].id}">
     <img src="https://image.tmdb.org/t/p/w500${buscadorPelicula[i].poster_path}" class="imagenes">
     </a>
     <p class="titulo">${buscadorPelicula[i].title}</p>
@@ -50,4 +50,6 @@ fetch(url)
 
 
     
+
+
 
