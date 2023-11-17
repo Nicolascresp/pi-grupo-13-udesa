@@ -5,7 +5,7 @@ const id = urlParams.get('id');
 
 let detallesContainer = document.querySelector('.toreto');
 
-fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=3e70f944e54851d50cccbf55e9b26736`)
+fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=2824d7c18fccbca72f06f7f29e7ebcd8`)
     .then(function (response) {
         return response.json();
     })
@@ -14,12 +14,9 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=3e70f944e54851d50cccbf55
         let genero= ""
         for (let index = 0; index < data.genres.length; index++) {
             genero += `
-            <a class="apa" href="./detalleGenero.html?id=${data.genres[index].id}">
-            <button class="agregara">${data.genres[index].name}</button>
-            
-          </a>
-            `
-            
+            <a class="apa" href="./detalleGenero.html?id=${data.genres[index].id}&name=${data.genres[index].name}">
+                <button class="agregara">${data.genres[index].name}</button>
+            </a>`
         }
         detallesContainer.innerHTML = '';
 
@@ -75,8 +72,5 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=3e70f944e54851d50cccbf55
     .catch(function (error) {
         console.log( error + 'Error! Intente más tarde');
     });
-
-
-
 
 
