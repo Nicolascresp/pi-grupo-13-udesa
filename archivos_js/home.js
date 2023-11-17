@@ -3,15 +3,15 @@ let urlpeliculaspopulares = `https://api.themoviedb.org/3/movie/popular?api_key=
 
 function clickEnCard (event) {
  
-  const id = event.target.children[1].innerText;
-  const tipo = event.target.children[4].innerText;
+  const id = event.currentTarget.children[1].innerText;
+  const tipo = event.currentTarget.children[4].innerText;
   let nuevaURL = "#";
   if(tipo === "pelicula"){
     // Construir la URL con parámetros
-    nuevaURL = `../detallePeliculas.html?id=${id}`;
+    nuevaURL = `detallePeliculas.html?id=${id}`;
   }
   else{
-    nuevaURL = `../detalleSeries.html?id=${id}`;
+    nuevaURL = `detalleSeries.html?id=${id}`;
   }
 
   window.location.href = nuevaURL;
