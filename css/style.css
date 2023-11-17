@@ -18,7 +18,7 @@ html {
     align-items: center;
 }
 
-.navegacion{
+.navegacion {
     margin-bottom: 40px;
 }
 
@@ -43,6 +43,7 @@ html {
     align-items: center;
     border-radius: 30px;
 }
+
 .genero {
     margin-top: 100px;
     margin: 0 20px;
@@ -75,7 +76,7 @@ html {
 }
 
 .footer {
-    
+
     height: 70px;
     width: 100%;
     display: flex;
@@ -85,7 +86,8 @@ html {
     margin-top: 50px;
     background-color: #16A3A6;
 }
-.cajaPadreFooter{
+
+.cajaPadreFooter {
     display: flex;
     flex-direction: column;
     height: 120px;
@@ -94,7 +96,8 @@ html {
 
 
 }
-.logoApi{
+
+.logoApi {
     max-width: 20%;
     height: auto;
     align-items: center;
@@ -118,7 +121,7 @@ html {
 
 /*Contenedor padre de las imagenes*/
 .hijo1 {
-   
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -126,16 +129,18 @@ html {
     height: auto;
 
 }
+
 .hijo2 {
-   
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 
 }
+
 .hijo3 {
-   
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -156,7 +161,7 @@ html {
     color: #e5e5e5;
     overflow: auto;
     max-height: 50px;
-} 
+}
 
 .titulo {
     list-style: none;
@@ -179,23 +184,47 @@ html {
     font-size: 22px;
     margin: 65px;
     margin-top: 40px;
-    font-weight: bold;
-}
-.genero1{
-    display: flex;
-    flex-direction: column;
     
 }
-.lista-generos {
+
+.separandoGeneros a {
+   
+    color: black;
     text-decoration: none;
+    font-size: 15px;
     list-style: none;
     font-family: Verdana;
-    margin: 40px;
+    font-weight: 500;
+}
+.separandoGeneros  {
+    margin-top: 30px;
+    background-color: #88e0bc;
+    height: 30px;
+    width: 200px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+.genero1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.lista-generos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 90px;
-    gap: 45px;
 }
 
 
@@ -212,6 +241,7 @@ html {
     font-family: Verdana;
     margin-bottom: 10px;
 }
+
 /*separando los elementos de la lista de generos*/
 .card {
     padding: 15px;
@@ -220,7 +250,7 @@ html {
     flex-direction: column;
     align-items: center;
     width: 200px;
-    
+
 }
 
 
@@ -289,14 +319,15 @@ html {
 }
 
 .sinop {
-   
+
     border-radius: 8px;
     background-color: rgb(88, 73, 73);
     width: 550px;
     padding: 10px;
     margin: 28px;
 }
-.sinopsisPadre{
+
+.sinopsisPadre {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -309,17 +340,20 @@ html {
     justify-content: center;
     align-items: center;
 }
-.des{
+
+.des {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.rep{
+
+.rep {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.recom{
+
+.recom {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -433,10 +467,10 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
     }
 
-    #areaResultados{
+    #areaResultados {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -449,7 +483,7 @@ html {
         justify-content: center;
         align-items: center;
     }
-    
+
     .separando {
         margin-top: 15px;
     }
@@ -495,4 +529,4 @@ html {
     .botones {
         width: 75vw;
     }
-    }
+}

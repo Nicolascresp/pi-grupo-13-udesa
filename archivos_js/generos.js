@@ -19,7 +19,7 @@ fetch(endpointUno)
 
         for (let i = 0; i < arrayGeneros.length; i++) {
             codigo1 +=
-                `<li class="separando">
+                `<li class="separandoGeneros">
                     <a href="detallegenero.html?id=${arrayGeneros[i].id}&name=${arrayGeneros[i].name}">
                          ${arrayGeneros[i].name}
                     </a>
@@ -49,7 +49,7 @@ fetch(endpointDos)
 
 
             codigo2 +=
-                `<li class="separando">
+                `<li class="separandoGeneros">
                 <a href="detalleGenero.html?id=${arrayGenerosDos[i].id}&name=${arrayGenerosDos[i].name}">
                     ${arrayGenerosDos[i].name}
                 </a>
