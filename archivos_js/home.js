@@ -3,15 +3,15 @@ let urlpeliculaspopulares = `https://api.themoviedb.org/3/movie/popular?api_key=
 
 function clickEnCard (event) {
  
-  const id = event.target.children[1].innerText;
-  const tipo = event.target.children[4].innerText;
+  const id = event.currentTarget.children[1].innerText;
+  const tipo = event.currentTarget.children[4].innerText;
   let nuevaURL = "#";
   if(tipo === "pelicula"){
     // Construir la URL con parámetros
-    nuevaURL = `../detallePeliculas.html?id=${id}`;
+    nuevaURL = `detallePeliculas.html?id=${id}`;
   }
   else{
-    nuevaURL = `../detalleSeries.html?id=${id}`;
+    nuevaURL = `detalleSeries.html?id=${id}`;
   }
 
   window.location.href = nuevaURL;
@@ -35,10 +35,10 @@ fetch(urlpeliculaspopulares)
               <img src="https://image.tmdb.org/t/p/w500${arrayPeliculas[i].poster_path}"
                   class="imagenes">
           </a>
-          <p class="id">${arrayPeliculas[i].id}</p>
+          <p class="id" id="oculto">${arrayPeliculas[i].id}</p>
           <p class="titulo">${arrayPeliculas[i].title}</p>
           <p class="texto">${arrayPeliculas[i].release_date}</p>
-          <p class="texto">pelicula</p>
+          <p class="texto" id="oculto">pelicula</p>
       </article>`;
     }
 
@@ -70,15 +70,15 @@ fetch(urlpeliculaspopulares)
     for (let i = 0; i < 5; i++) {
       
         contenido += `
-      <article class="card"?id=${arraySeries[i].original_name}>
-          <a>
+      <article class="card">
+          <a href="./detallePeliculas.html?id=${arraySeries[i].id}">
               <img src="https://image.tmdb.org/t/p/w500${arraySeries[i].poster_path}"
                   class="imagenes">
           </a>
-          <p class="id">${arraySeries[i].id}</p>
+          <p class="id" id="oculto">${arraySeries[i].id}</p>
           <p class="titulo">${arraySeries[i].original_name}</p>
           <p class="texto">${arraySeries[i].first_air_date}</p>
-          <p class="texto">serie</p>
+          <p class="texto" id="oculto">serie</p>
       </article>`;
     }
 
@@ -109,8 +109,8 @@ fetch(urlpeliculasclasificadas)
 
     for (let i = 0; i < 5; i++) {
       contenido += `
-      <article class="card"?id=${arrayclasificadas[i].title}>
-          <a href="./detallePeliculas.html">
+      <article class="card">
+          <a href="./detallePeliculas.html?id=${arrayclasificadas[i].id}">
               <img src="https://image.tmdb.org/t/p/w500${arrayclasificadas[i].poster_path}"
                   class="imagenes">
           </a>

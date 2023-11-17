@@ -43,6 +43,17 @@ html {
     align-items: center;
     border-radius: 30px;
 }
+.genero {
+    margin-top: 100px;
+    margin: 0 20px;
+    background-color: #4AE0E4;
+    height: 70px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
 
 /*ASPECTOS GENERALES DE LA PAGINA*/
 
@@ -241,6 +252,7 @@ html {
     border-radius: 30px black;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .cal {
@@ -262,6 +274,8 @@ html {
     list-style: none;
     border-radius: 5px;
     padding-right: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 .coin {
@@ -275,23 +289,47 @@ html {
 }
 
 .sinop {
-    display: flex;
+   
     border-radius: 8px;
     background-color: rgb(88, 73, 73);
     width: 550px;
     padding: 10px;
     margin: 28px;
 }
+.sinopsisPadre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .botones {
     margin: 4px;
     width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.des{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rep{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .arrab {
     display: flex;
     flex-direction: column;
     margin-top: 11px;
+    justify-content: center;
     align-items: center;
 }
 
@@ -316,6 +354,8 @@ html {
     margin-bottom: 18px;
     height: 24px;
     color: #e5e5e5;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -328,14 +368,17 @@ html {
     background-color: #363232;
     margin-bottom: 18px;
     color: #e5e5e5;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .apa {
     text-decoration: none;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+
 }
 
 
@@ -355,7 +398,7 @@ html {
 
 
 
-.oculto {
+#oculto {
     display: none;
 }
 
