@@ -1,4 +1,3 @@
-// Obtener parámetros de la URL
 const urlParams = new URLSearchParams(window.location.search);
 
 // Obtener el valor del parámetro1
@@ -12,6 +11,16 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=2824d7c18fccbca72f06f7f2
     })
     .then(function (data) {
         console.log(data);
+        let genero= ""
+        for (let index = 0; index < data.genres.length; index++) {
+            genero += `
+            <a class="apa" href="./detalleGenero.html?id=${data.genres[index].id}">
+            <button class="agregara">${data.genres[index].name}</button>
+            
+          </a>
+            `
+            
+        }
         detallesContainer.innerHTML = '';
 
         let article = document.createElement('article');
@@ -31,7 +40,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=2824d7c18fccbca72f06f7f2
     <article class="ho">
         <ul class="parejo">
             <li class="ten">N°7 en Tendencias</li>
-            <li>Duracion: 2h 23m</li>
+            <li>Duracion: ${data.runtime}</li>
         </ul>
     </article>
     <article class="arrab">
@@ -54,8 +63,8 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=2824d7c18fccbca72f06f7f2
     <article class="sinopsisPadre">
         <p class="sinop">Sinopsis: ${data.overview}</p>
     </article>
-
-    <a class="apa" href="./detalleGenero.html" target=""> <button class="agregara">${data.genres}</button></a>
+        ${genero}
+  
 
 
     <a class="apa" href="./favoritos.html" target=""> <button class="agregarb" type="checkbox">Agregar a
@@ -64,7 +73,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=2824d7c18fccbca72f06f7f2
         detallesContainer.appendChild(article);
     })
     .catch(function (error) {
-        console.log('Error! Intente más tarde');
+        console.log( error + 'Error! Intente más tarde');
     });
 
 

@@ -70,8 +70,8 @@ fetch(urlpeliculaspopulares)
     for (let i = 0; i < 5; i++) {
       
         contenido += `
-      <article class="card"?id=${arraySeries[i].original_name}>
-          <a>
+      <article class="card">
+          <a href="./detallePeliculas.html?id=${arraySeries[i].id}">
               <img src="https://image.tmdb.org/t/p/w500${arraySeries[i].poster_path}"
                   class="imagenes">
           </a>
@@ -109,8 +109,8 @@ fetch(urlpeliculasclasificadas)
 
     for (let i = 0; i < 5; i++) {
       contenido += `
-      <article class="card"?id=${arrayclasificadas[i].title}>
-          <a href="./detallePeliculas.html">
+      <article class="card">
+          <a href="./detallePeliculas.html?id=${arrayclasificadas[i].id}">
               <img src="https://image.tmdb.org/t/p/w500${arrayclasificadas[i].poster_path}"
                   class="imagenes">
           </a>

@@ -55,7 +55,9 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=2824d7c18fccbca72f06f7f29e7
         <p class="sinop">Sinopsis: ${data.overview}</p>
     </article>
 
-    <a class="apa" href="./detalleGenero.html" target=""> <button class="agregara">${data.genres}</button></a>
+    <a class="apa" href="./detalleGenero.html" target=""> <button class="agregara">${data.genres[0]}</button></a>
+    <a class="apa" href="./detalleGenero.html" target=""> <button class="agregara">${data.genres[1]}</button></a>
+    <a class="apa" href="./detalleGenero.html" target=""> <button class="agregara">${data.genres[2]}</button></a>
 
 
     <a class="apa" href="./favoritos.html" target=""> <button class="agregarb" type="checkbox">Agregar a
@@ -66,5 +68,6 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=2824d7c18fccbca72f06f7f29e7
     .catch(function (error) {
         console.log('Error! Intente más tarde');
     });
+
 
 
