@@ -1,11 +1,11 @@
-const ApiKey = "e076870216634aba329a155058ae5e08"
-let qs = location.search;
-let qsObj = new URLSearchParams(qs);
-let idGenero = qsObj.get('id');
-let nombre = qsObj.get('name');
+const apiKey = "3e70f944e54851d50cccbf55e9b26736"
+let url = location.search;
+let respUrl = new URLSearchParams(url);
+let idGenero = respUrl.get('id');
+let nombre = respUrl.get('name');
 
-let endpointPelicula = `https://api.themoviedb.org/3/discover/movie?api_key=${ApiKey}&with_genres=${idGenero}`
-let endpointSerie = `https://api.themoviedb.org/3/discover/tv?api_key=${ApiKey}&with_genres=${idGenero}`
+let endpointPelicula = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${idGenero}`
+let endpointSerie = `https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&with_genres=${idGenero}`
 
 
 fetch(endpointPelicula)
