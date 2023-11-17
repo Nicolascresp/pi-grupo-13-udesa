@@ -40,7 +40,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=2824d7c18fccbca72f06f7f2
     <article class="ho">
         <ul class="parejo">
             <li class="ten">N°7 en Tendencias</li>
-            <li>Duracion: ${data.runtime}</li>
+            <li>Duracion: ${data.runtime} minutos</li>
         </ul>
     </article>
     <article class="arrab">

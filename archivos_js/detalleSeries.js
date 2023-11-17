@@ -31,7 +31,7 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=2824d7c18fccbca72f06f7f29e7
     <article class="ho">
         <ul class="parejo">
             <li class="ten">N°7 en Tendencias</li>
-            <li>Duracion: 2h 23m</li>
+            <li>Duracion: ${data.runtime} minutos</li>
         </ul>
     </article>
     <article class="arrab">

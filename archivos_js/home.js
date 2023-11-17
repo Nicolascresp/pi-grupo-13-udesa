@@ -71,7 +71,7 @@ fetch(urlpeliculaspopulares)
       
         contenido += `
       <article class="card">
-          <a href="./detallePeliculas.html?id=${arraySeries[i].id}">
+          <a href="./detalleSeries.html?id=${arraySeries[i].id}">
               <img src="https://image.tmdb.org/t/p/w500${arraySeries[i].poster_path}"
                   class="imagenes">
           </a>
