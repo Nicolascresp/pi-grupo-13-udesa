@@ -11,6 +11,13 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=2824d7c18fccbca72f06f7f29e7
     })
     .then(function (data) {
         console.log(data);
+        let genero= ""
+        for (let index = 0; index < data.genres.length; index++) {
+            genero += `
+            <a class="apa" href="./detalleGenero.html?id=${data.genres[index].id}&name=${data.genres[index].name}">
+                <button class="agregara">${data.genres[index].name}</button>
+            </a>`
+        }
         detallesContainer.innerHTML = '';
 
         let article = document.createElement('article');
@@ -54,10 +61,7 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=2824d7c18fccbca72f06f7f29e7
         <p class="sinop">Sinopsis: ${data.overview}</p>
     </article>
 
-    <a class="apa" href="./detalleGenero.html" target=""> <button class="agregara">${data.genres[0]}</button></a>
-    <a class="apa" href="./detalleGenero.html" target=""> <button class="agregara">${data.genres[1]}</button></a>
-    <a class="apa" href="./detalleGenero.html" target=""> <button class="agregara">${data.genres[2]}</button></a>
-
+    ${genero}
 
     <a class="apa" href="./favoritos.html" target=""> <button class="agregarb" type="checkbox">Agregar a
             favoritos</button></a>`;
