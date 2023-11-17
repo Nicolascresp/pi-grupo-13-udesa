@@ -30,19 +30,18 @@
     </section>
 
     <script>
-
+        
         fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=2824d7c18fccbca72f06f7f29e7ebcd8')
             .then(function (response) {
                 return response.json();
             })
             .then(function (data) {
-                let arrayRecomendadas = document.querySelector('#recomendadas');
+                let pelisreco = document.querySelector('.pelisreco');
                 for (let i = 0; i < 5; i++, i < 5) {
                     pelisreco.innerHTML += `
-                   <a class="hijo2" href="./detallePeliculas.html?id=${data.results[i].id}">
-
+                    <a  class= "hijo2" href="./detallePeliculas.html?id=${data.results[i].id}">
                         <article >
-                            <img class= "imagen" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" />
+                            <img src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" />
                     
                             <h2 class= "titulopelisreco">${data.results[i].title}</h2>
                         </article>

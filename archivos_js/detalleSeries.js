@@ -6,7 +6,7 @@ const id = urlParams.get('id');
 
 let detallesContainer = document.querySelector('.toreto');
 
-fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=2824d7c18fccbca72f06f7f29e7ebcd8`)
+fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=3e70f944e54851d50cccbf55e9b26736`)
     .then(function (response) {
         return response.json();
     })
@@ -31,7 +31,7 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=2824d7c18fccbca72f06f7f29e7
     <article class="ho">
         <ul class="parejo">
             <li class="ten">N°7 en Tendencias</li>
-            <li>Duracion: 2h 23m</li>
+            <li>Duracion: ${data.runtime} minutos</li>
         </ul>
     </article>
     <article class="arrab">
@@ -68,6 +68,8 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=2824d7c18fccbca72f06f7f29e7
     .catch(function (error) {
         console.log('Error! Intente más tarde');
     });
+
+
 
 
 

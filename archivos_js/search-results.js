@@ -1,10 +1,11 @@
 const urlBusqueda = document.URL ;
 const index = urlBusqueda.indexOf("busqueda=");
 const searchText = urlBusqueda.slice(index + "busqueda=".length);
-const api_key = `3e70f944e54851d50cccbf55e9b26736`
+const apiKey = `3e70f944e54851d50cccbf55e9b26736`
 const busqueda = searchText
-const url = `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&query=${busqueda}`
+const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${busqueda}`
 const areaDeResultados = document.querySelector("#areaResultados")
+
 
 
 
@@ -29,10 +30,10 @@ fetch(url)
 
 
 
-        for (let i = 0; i < buscadorPelicula.length; i++) {
+        for (let i = 0; i < 18 ; i++) {
             contenido += `
       <article class="card">
-    <a href="./detalleSeries.html">
+    <a href="./detallePeliculas.html?id=${buscadorPelicula[i].id}">
     <img src="https://image.tmdb.org/t/p/w500${buscadorPelicula[i].poster_path}" class="imagenes">
     </a>
     <p class="titulo">${buscadorPelicula[i].title}</p>
@@ -50,4 +51,6 @@ fetch(url)
 
 
     
+
+
 

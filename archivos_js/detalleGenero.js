@@ -1,16 +1,16 @@
-const ApiKey = "e076870216634aba329a155058ae5e08"
-let qs = location.search;
-let qsObj = new URLSearchParams(qs);
-let idGenero = qsObj.get('id');
-let nombre = qsObj.get('name');
+const apiKey = "3e70f944e54851d50cccbf55e9b26736"
+let url = location.search;
+let objeto = new URLSearchParams(url);
+let idGenero = objeto.get('id');
+let nombre = objeto.get('name');
 
-let endpointPelicula = `https://api.themoviedb.org/3/discover/movie?api_key=${ApiKey}&with_genres=${idGenero}`
-let endpointSerie = `https://api.themoviedb.org/3/discover/tv?api_key=${ApiKey}&with_genres=${idGenero}`
+let endpointPelicula = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${idGenero}`
+let endpointSerie = `https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&with_genres=${idGenero}`
 
 
 fetch(endpointPelicula)
-    .then(function (res) {
-        return res.json();
+    .then(function (resultados) {
+        return resultados.json();
     })
     .then(function (data) {
 
@@ -26,7 +26,7 @@ fetch(endpointPelicula)
         for (let i = 0; i < 11; i++) {
             if (arrayDetalleGenero[i].poster_path != "") {
                 detalleGen += `<article class="card"?id=${arrayDetalleGenero[i].title}>
-                <a>
+                <a href="./detallePeliculas.html?id=${arrayDetalleGenero[i].id}">
                     <img src="https://image.tmdb.org/t/p/w500${arrayDetalleGenero[i].poster_path}"
                         class="imagenes">
                 </a>
@@ -46,8 +46,8 @@ fetch(endpointPelicula)
 
 
 fetch(endpointSerie)
-    .then(function (res) {
-        return res.json();
+    .then(function (resultados) {
+        return resultados.json();
     })
     .then(function (data) {
 
@@ -61,12 +61,15 @@ fetch(endpointSerie)
         console.log(data);
         for (let i = 0; i < 11; i++) {
             if (arrayDetalleGenero[i].poster_path != null) {
-                detalleGen += `<a class="card" href="./detallepelicula.html?id=${arrayDetalleGenero[i].id}">
-                                    <article class="card">
-                                    <img class="imagen" src='https://image.tmdb.org/t/p/w500/${arrayDetalleGenero[i].poster_path}' alt="">
-                                    <p class="titulo">${arrayDetalleGenero[i].original_name}</p>
-                                    </article>
-                                    </a> `;
+                detalleGen += `<article class="card"?id=${arrayDetalleGenero[i].title}>
+                <a href="./detallePeliculas.html?id=${arrayDetalleGenero[i].id}">
+                    <img src="https://image.tmdb.org/t/p/w500${arrayDetalleGenero[i].poster_path}"
+                        class="imagenes">
+                </a>
+                <p class="id" id="oculto">${arrayDetalleGenero[i].id}</p>
+                <p class="titulo">${arrayDetalleGenero[i].name}</p>
+                <p class="texto" id="oculto">pelicula</p>
+            </article>`;
             }
         }
 
